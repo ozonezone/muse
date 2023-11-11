@@ -63,7 +63,7 @@ export interface Playlist {
   /** can be `Playlist`, `Chart` or `Radio` */
   type: string;
   year: string | null;
-  trackCount: number | null;
+  trackCount: any;
   duration: string | null;
   duration_seconds: number;
   tracks: PlaylistItem[];

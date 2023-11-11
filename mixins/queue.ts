@@ -40,7 +40,7 @@ export interface Queue {
   current: {
     videoId: string;
     playlistId: string;
-    index: number;
+    index?: number;
   } | null;
 }
 
