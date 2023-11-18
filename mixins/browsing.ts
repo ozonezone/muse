@@ -258,6 +258,7 @@ export interface AlbumResult extends AlbumHeader {
   id: string;
   tracks: PlaylistItem[];
   other_versions: ParsedAlbum[] | null;
+  artists?: ArtistRun[];
 }
 
 export async function get_album(

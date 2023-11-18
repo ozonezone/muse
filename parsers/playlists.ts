@@ -35,15 +35,15 @@ export type VideoType =
   | "MUSIC_VIDEO_TYPE_PRIVATELY_OWNED_TRACK" /** Song uploaded by user */;
 
 export interface PlaylistItem {
-  videoId: string;
+  videoId: string | null;
   title: string;
   artists: SongArtist[];
   album: Album | null;
-  likeStatus: LikeStatus;
-  thumbnails: Thumbnail[];
-  isAvailable: boolean;
-  isExplicit: boolean;
-  videoType: VideoType;
+  likeStatus: LikeStatus | null;
+  thumbnails: Thumbnail[] | null;
+  isAvailable: boolean | null;
+  isExplicit: boolean | null;
+  videoType: VideoType | null;
   duration: string | null;
   duration_seconds: number | null;
   setVideoId: string | null;

@@ -39,7 +39,7 @@ export interface Queue {
   continuation: string | null;
   current: {
     videoId: string;
-    playlistId: string;
+    playlistId?: string;
     index?: number;
   } | null;
 }

@@ -390,7 +390,10 @@ export function parse_mood_or_genre(result: any[]): ParsedMoodOrGenre {
   };
 }
 
-export type AlbumType = "album" | "single" | "ep";
+// export type AlbumType = "album" | "single" | "ep";
+
+// if language is not english, this can be any string
+export type AlbumType = string;
 
 export interface ParsedAlbum extends ShuffleAndRadioIds {
   type: "album";
